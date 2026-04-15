@@ -1,0 +1,9 @@
+Explanation:
+So I started by declaring board as an global variable the solved boolean track if the board has been filled The code will loop through the graph and using math.random will choose an value it checks the value with the row column and box using the isvalid command.The if it don’t work it will just choose new value in the case that no values work it will trigger the atp value apt stand for attempts and when that hit 100 it will wipe the board and rerun it.
+
+I used an 2d Array to store every value of the board and later printed it out using a simple for each loop.
+
+The main part of creating it is the Is valid function it an boolean so it will automatically return true or false.The function searches for the cases in which it is wrong/false. So it first runs down the current column to make sure that the number selected is not in the current column then it repeats the same process for the rows. The last check is for the boxes it uses an nested for loop since it goes through both column and rows. We know the location of the top left of the box by using ((row / 3) * 3) + r][((col / 3) * 3) + c.We divide by 3 to remove the decimal.
+
+I tested the code by running it a total of 10 times.The board was right every time but it did take longer some times then others.I also made and temporary check(now deleted)To test the isValid method since i wrote that section first and wanted to test it.I also manually tested the sudoku to make sure that it is playable and not just straight up wrong
+The Hardest part were definitely the box method since it took me forever to figure out how to locate the box and the main method since i didn’t think of the code hitting and wall and just stuck on one value forever.I also almost forgot the box check so that was added later.
